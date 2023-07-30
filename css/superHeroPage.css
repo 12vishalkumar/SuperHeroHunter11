@@ -1,0 +1,235 @@
+/* ------------------------------------------------Super Hero -------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+body {
+    background-color: #a9a9a9;
+}
+
+
+/* -------------------------------------------- Header -------------------------------------- */
+.nav {
+    position: fixed;
+    width: 100%;
+}
+
+/* -----------------------------Navbar----------------------------- */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #008b8b;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+}
+
+.vav-btn-hover {
+    background-color: #008000;
+    cursor: pointer;
+}
+
+.vav-btn-hover:hover {
+    background-color: #006400;
+}
+
+.logo-image {
+    width: 10%;
+    min-width: 50px;
+}
+
+/*-------------------------- nav button ------------------------------------*/
+.nav-btn {
+    padding: 10px;
+    min-height: 30px;
+    text-align: center;
+    border: none;
+    border: 1px solid rgbA(2, 117, 221, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+/* ----------------------------------------- Card CSS ------------------------------------- */
+.blog-slider {
+    width: 70%;
+    margin: auto;
+    margin-top: 5em;
+    margin-bottom: 10vh;
+    background: #fff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 25px;
+    border-radius: 25px;
+    height: auto;
+    transition: all 0.3s;
+    background-color: #228B22;
+}
+
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: -1emem;
+    font-size: 2em;
+}
+
+.hero-img-and-more-info {
+    gap: 20px;
+}
+
+#tag {
+    padding: 4px 10px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: 2m;
+    color: #495057;
+    margin: 6px;
+    display: flex;
+}
+
+
+/*---------------------------------------- image ----------------------------*/
+ img:hover {
+    z-index: 4;
+    box-shadow: 0px 0px 12px 0.1px black;
+    height: 18vw;
+    width: 15vw;
+    cursor: pointer;
+}
+
+.hero-img {
+    width: 90%;
+    height: auto;
+    border: 1px solid #9b9b9b;
+    margin: 5px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.more-info {
+    gap: 15px;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 16px 8px 8px 8px;
+
+}
+
+.id,
+.comics,
+.series,
+.stories {
+    gap: 8px;
+}
+
+.hero-discription {
+    font-size: 1.1rem;
+}
+.hero-discription b {
+    font-size: 1.3rem;
+}
+
+.bg-img {
+    z-index: -1;
+}
+
+/*---------------------------- Media -------------------------------------*/
+
+.hero-discription {
+    text-align: left;
+
+}
+
+#info-container {
+    width: 100%;
+}
+
+#landscapeImage {
+    width: 100%;
+}
+
+.more-info {
+    gap: 1px;
+}
+
+.txtarea {
+    width: 100%;
+    height: auto;
+}
+
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.desss {
+    display: block;
+}
+
+.addToFavBtn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #CD5C5C;
+    margin: 0 auto;
+    display: block;
+    transition: all 200ms ease-in-out;
+    text-align: left;
+}
+
+.addToFavBtn:hover,
+.addToFavBtn:focus {
+    background-color: #0000FF;
+    color: #e0efff;
+    cursor: pointer;
+}
+
+
+#addtoastx {
+    visibility: hidden;
+    min-width: 250px;
+    align-items: center;
+    margin-left: -125px;
+    background-color: #3d83c0;
+    border: 5px solid #0225ff;
+    color: black;
+    text-align: center;
+    border-radius: 22px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+/*--------------------------------------------- Alert box ------------------------------------*/
+#addtoastx.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+.mainContainer {
+    flex-flow: row wrap;
+}

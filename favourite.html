@@ -1,0 +1,99 @@
+<!-- -------------------------------------------- Favourite heroes page ---------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- ---------------------------- Title ---------------------------------->
+        <title>SuperHero Hunter</title>
+
+        <!-- ----------------------- Browser Logo (flaticon) --------------------->
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/1090/1090806.png" type="image/x-icon">
+
+        <!-- -----------------------Google Fonts (Font Awesome Script) ------>
+        <script src="https://kit.fontawesome.com/3736305248.js" crossorigin="anonymous"></script>
+
+        <!---------------------------------------- css ----------------------------->
+        <link rel="stylesheet" href="./css/fav.css" />
+
+        <!------------------------------------ footer link ------------------------->
+        <link rel="stylesheet" type="text/css" href="./css/footer.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <!-------------------------------------------- body ---------------------------------------------------------->
+    <body>
+
+        <!----------------------------- Header ------------------------------------->
+        <header class="container">
+            <nav class="nav">
+                <div class="navbar">
+
+                    <!-------------------------- Logo Image ---------------------------->
+                    <i>
+                        <a href="./index.html">
+                            <img class="logo-image"src="https://cdn-icons-png.flaticon.com/128/1090/1090740.png" alt=""/>
+                        </a>
+                    </i>
+
+                    <!-------------------------- Home Button -------------------------->
+                    <a href="./index.html">
+                        <button class="btn nav-btn vav-btn-hover">
+                            <i class="fa-solid fa-house fav-btn">&nbsp;Home&nbsp;</i>
+                        </button>
+                    </a>
+
+                    <!----------------------------- Favourite Button ------------------>
+                    <a href="./favourite.html">
+                        <button class="btn nav-btn vav-btn-hover">
+                            <i class="fa-solid fa-heart fav-btn">&nbsp;Favourites&nbsp;</i>
+                        </button>
+                    </a>
+
+                </div>
+            </nav>
+        </header>
+
+        <!------------------------------ fav Results Box --------------------------------->
+        <ul class="flex-row fav-results" id="fav-results"></ul>
+
+        <!---------------------------------------- [ display superHero using JavaScript ] ----------------------------->
+
+        <!-- ------------------------------- Footer -------------------------------------->
+        <footer class="homepage-footer">
+
+            <div class="footer-content">
+                <h3>SuperHero Hunter Web Devloper</h3>
+                <p>Users are able to Search for the Super Heroes by entering the name or searchable-term in the Search Input. It shows a list of results as autocomplete suggestions, which upon clicking directs us to that particular superhero card with all the information provided by the SuperHero() API.
+                </p>
+                <ul class="socials">
+                    <li>
+                        <a href="https://twitter.com"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.telegram.com/VishalKuma541"><i class="fa fa-telegram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vishal-kumar-290297206/"><i class="fa fa-linkedin-square"></i></a>
+                    </li>
+                </ul>
+                <div class="footer-bottom">
+                    <p>copyright &copy;2023 <a href=”#”>SuperHeroDevloper</a></p>
+                    <p id="pTag">vk364703@gmail.com</p>
+                </div>
+            </div>
+
+        </footer>
+
+        <!---------------------------- External Script file ------------------------------>
+        <script src="./script/favourite.js"></script>
+
+    </body>
+</html>
